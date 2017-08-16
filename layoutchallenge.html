@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang= "en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"/>
+    <title>Layout Challenge</title>
+    <link rel="stylesheet" media="screen and (min-width: 400px)" href="layoutChallengeCSS.css" type="text/css"/>
+    <style type="text/css">
+ 
+   #container {
+        margin-right: auto; 
+     margin-left: auto;
+     width: 960px;
+    /*margin-top: 130px;*/
+   
+     border-radius: 10px;
+     font-size: 0;
+     padding: 10px;
+     
+   
+   }
+ 
+.box {
+     width: 960px;
+     
+     background-color: #81BBC9;
+     margin-bottom: 10px;
+     border-radius: 10px;
+     display: block;
+     font-size: 14px;
+     text-align: center;
+     padding: 30px 0;
+     
+   
+     
+   
+
+     
+ }
+  .side {
+      -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+      display: inline-block;
+      height: 320px;
+      width: 172.8px;
+      box-sizing: border-box;
+      margin: 9.6px 19.2px 9.6px 0; 
+      padding-left: 10px;
+      padding-right: 10px; 
+      vertical-align: top;
+      font-size: 13px;
+      position: relative;
+      
+      
+     }
+  
+  .cont {
+      -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+      display: inline-block;
+      height: 320px;
+      width: 748.8px;
+      box-sizing: border-box;
+      margin: 9.6px 0 9.6px 19.2px;
+      position: relative;
+      padding-left: 40px;
+      padding-right: 40px;
+      
+     }
+
+     #linkToTop {
+         position: absolute;
+         bottom: 0px;
+         right: -80px;
+     }
+
+     #sideLinkToTop {
+         position: absolute;
+         bottom: 0px;
+         left: -80px;
+     }
+
+  p {
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+      
+  }
+  #header {
+     /* position: fixed;
+      top: 0px;
+      z-index: 100;*/
+     
+  }
+  body {
+      background-image: url(photo1.jpeg);
+      
+      background-size: contain cover; 
+  }
+   /* @media screen and (min-width: 400px) {
+        p {
+            font-size: 20px;
+        }
+        .box {
+            text-align: left;
+            background-color: #eee;
+            border-color: white;
+        }
+    }
+    @media screen and (min-width: 1000px) {
+        .box {
+            border: solid darkorchid 5px;
+            color: white;
+            background-color: cadetblue;
+        }
+    }*/
+    p::first-line {
+        font-size: 20px;
+    }
+    p::first-letter {
+        font-size: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="header"><h1>Header</h1></div>
+    <div class="box side"><h2>Sidebar</h2>
+        <p align="left">Aenean non lacus tempus, consectetur elit quis, fringilla metus.
+             Morbi sit amet tempus justo. Maecenas in cursus velit.
+              Vestibulum nec sem dictum velit egestas vulputate. 
+              Maecenas sit amet venenatis risus.
+               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. 
+            </p>
+            <img src="arrow.png" alt="Arrow" id="sideLinkToTop">
+    </div>
+    <div class="box cont"><h2>Content</h2>
+        <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Mauris sapien ante, mattis ac dui sit amet, congue laoreet magna. 
+             Ut feugiat, ipsum sed semper facilisis, lacus sapien lobortis erat,
+              eu cursus libero libero non neque. Aliquam semper leo neque, 
+              eu consequat eros ullamcorper vitae. Donec fermentum, erat feugiat posuere mollis,
+               nibh mauris placerat nisl, ut tristique mi arcu at mi. Fusce vestibulum porttitor feugiat.
+                Nulla facilisi. Curabitur vel leo diam. Cras id quam sit amet augue vulputate viverra.
+                 Fusce iaculis massa arcu, viverra cursus enim condimentum ut. 
+                 Sed faucibus, ante a accumsan ullamcorper, turpis sem imperdiet neque, 
+                 eget consequat erat risus quis ante.
+
+        </p>
+        <p>This is the final challenge (Part A) of positioning and css</p>
+        <img src="arrow.png" alt="arrow" id="linkToTop">
+    </div>
+        <div class="box side" ><h2>Sidebar</h2>
+        <p align="left">Aenean non lacus tempus, consectetur elit quis, fringilla metus.
+             Morbi sit amet tempus justo. Maecenas in cursus velit.
+              Vestibulum nec sem dictum velit egestas vulputate. 
+              Maecenas sit amet venenatis risus.
+               Aliquam libero nulla, commodo vel mauris nec, feugiat tempus nunc. 
+            </p>
+            
+    </div>
+    <div class="box cont"><h2>Content</h2>
+        <p align="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Mauris sapien ante, mattis ac dui sit amet, congue laoreet magna. 
+             Ut feugiat, ipsum sed semper facilisis, lacus sapien lobortis erat,
+              eu cursus libero libero non neque. Aliquam semper leo neque, 
+              eu consequat eros ullamcorper vitae. Donec fermentum, erat feugiat posuere mollis,
+               nibh mauris placerat nisl, ut tristique mi arcu at mi. Fusce vestibulum porttitor feugiat.
+                Nulla facilisi. Curabitur vel leo diam. Cras id quam sit amet augue vulputate viverra.
+                 Fusce iaculis massa arcu, viverra cursus enim condimentum ut. 
+                 Sed faucibus, ante a accumsan ullamcorper, turpis sem imperdiet neque, 
+                 eget consequat erat risus quis ante.
+
+        </p>
+        <img src="arrow.png" alt="arrow" id="linkToTop">
+    </div>
+    <div class="box"><h2>Footer</h2></div>
+  </div>
+</body>
+</html>
